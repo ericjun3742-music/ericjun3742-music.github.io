@@ -14,10 +14,10 @@
 </head>
 <body>
   <h1>개인정보처리방침 — ERICJUN Upload</h1>
-  <p>시행일: 2026년 10월 31일</p>
+  <p>시행일: 2026년 10월 31일 (인스타그램·페이스북 내용 추가: 2026년 10월 31일)</p>
 
   <h2>1. 어떤 프로그램인가요</h2>
-  <p>ERICJUN Upload는 에릭준(ERICJUN)이 본인 PC에서만 사용하는 개인용 프로그램으로, 에릭준 본인의 유튜브 채널에 영상을 업로드·예약 공개하는 데 쓰여요. 일반 사용자에게 제공되는 서비스가 아니에요.</p>
+  <p>ERICJUN Upload는 에릭준(ERICJUN)이 본인 PC에서만 사용하는 개인용 프로그램으로, 에릭준 본인의 유튜브 채널에 영상을 업로드·예약 공개하고, 같은 쇼츠 영상을 에릭준 본인의 인스타그램 계정과 페이스북 페이지에 릴스로 올리는 데 쓰여요. 일반 사용자에게 제공되는 서비스가 아니에요.</p>
 
   <h2>2. 사용하는 구글 데이터</h2>
   <p>Google 로그인으로 허용된 범위 안에서 YouTube Data API를 통해 다음 작업만 해요.</p>
@@ -27,12 +27,29 @@
     <li>본인 영상에 댓글 작성, 업로드한 영상의 공개 상태 확인</li>
   </ul>
 
+  <h2>2-1. 사용하는 메타(인스타그램·페이스북) 데이터</h2>
+  <p>Facebook 로그인으로 허용된 범위 안에서 Meta Graph API를 통해 다음 작업만 해요.</p>
+  <ul>
+    <li>에릭준이 관리하는 페이스북 페이지와 연결된 인스타그램 프로페셔널 계정의 이름·ID 확인</li>
+    <li>그 인스타그램 계정과 페이스북 페이지에 릴스 영상 업로드·예약 공개, 올린 릴스의 처리 상태 확인</li>
+  </ul>
+  <p>다른 사람의 계정, 팔로워, 메시지, 댓글 정보는 읽거나 저장하지 않아요.</p>
+
   <h2>3. 저장과 공유</h2>
-  <p>로그인 토큰은 에릭준 본인 PC에만 저장되고, 외부 서버로 보내거나 다른 사람·회사와 공유·판매하지 않아요. 광고나 분석 목적으로 쓰지 않아요.</p>
+  <p>구글·메타 로그인 토큰은 에릭준 본인 PC에만 저장되고, 외부 서버로 보내거나 다른 사람·회사와 공유·판매하지 않아요. 광고나 분석 목적으로 쓰지 않아요.</p>
   <p>Google API에서 받은 정보는 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>(Limited Use 요구사항 포함)를 따라 위 기능에만 사용해요.</p>
 
   <h2>4. 접근 권한 취소</h2>
   <p>언제든지 <a href="https://myaccount.google.com/permissions">Google 계정 → 보안 → 서드파티 액세스</a>에서 이 앱의 접근 권한을 삭제할 수 있어요. 삭제하면 PC에 저장된 토큰도 더 이상 쓸 수 없어요.</p>
+
+  <h2 id="data-deletion">4-1. 데이터 삭제 방법 (Data Deletion)</h2>
+  <p>이 프로그램은 서버가 없고, 에릭준 본인 PC 밖으로 데이터를 보내거나 보관하지 않아요. 저장되는 것은 PC의 로그인 토큰 파일과 업로드 기록뿐이에요.</p>
+  <ul>
+    <li>메타(인스타그램·페이스북) 연결 끊기: 페이스북 → 설정 및 개인정보 → 설정 → 비즈니스 통합(Business Integrations)에서 "ERICJUN Reels" 삭제, 또는 인스타그램 → 설정 → 웹사이트 권한 → 앱 및 웹사이트에서 삭제</li>
+    <li>구글 연결 끊기: <a href="https://myaccount.google.com/permissions">Google 계정 → 서드파티 액세스</a>에서 삭제</li>
+    <li>PC에 저장된 토큰·기록 삭제: 프로그램 폴더의 tokens, 로그 폴더 파일을 지우면 모두 없어져요</li>
+    <li>삭제를 요청하려면 아래 이메일로 연락 주세요. 7일 안에 처리하고 답장드려요.</li>
+  </ul>
 
   <h2>5. 문의</h2>
   <p>이메일: <a href="mailto:ericjun3742@gmail.com">ericjun3742@gmail.com</a></p>
@@ -42,7 +59,9 @@
     ERICJUN Upload is a personal tool used only by its owner (ERICJUN) to upload and schedule videos on his own YouTube channel via the YouTube Data API.
     OAuth tokens are stored only on the owner's computer. No data is sent to any other server, shared, or sold.
     Use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.
-    Access can be revoked at any time at https://myaccount.google.com/permissions. Contact: ericjun3742@gmail.com</p>
+    The same tool also publishes the owner's Shorts as Reels to his own Instagram professional account and Facebook Page via the Meta Graph API (Facebook Login for Business); it reads only the Page/Instagram account IDs and the processing status of the Reels it publishes.
+    Access can be revoked at any time at https://myaccount.google.com/permissions (Google) and Facebook Settings &gt; Business Integrations (Meta).
+    Data deletion: no data is stored outside the owner's computer; deleting the tokens and log folders removes everything. Requests: ericjun3742@gmail.com (handled within 7 days). Contact: ericjun3742@gmail.com</p>
   </div>
 
   <p><a href="index.html">← 홈으로</a></p>
